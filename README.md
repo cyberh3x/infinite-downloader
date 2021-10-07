@@ -1,2 +1,5 @@
-# instagram-downloader
-Download Instagram Profile Photo 
+# Instagram Downloader
+
+## Current features:
+
+* Download Instagram Profile Photo
