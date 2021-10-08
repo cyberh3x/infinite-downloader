@@ -8,7 +8,7 @@ class App():
         try:
             root = Tk()
             root.title("Instagram Downloader")
-            root.iconbitmap("./assets/images/icons/instagram.ico")
+            root.iconbitmap("assets/images/icons/instagram.ico")
             root.geometry("500x230")
             self.renderInstagramViews(root)
             self.renderFooter(root)
