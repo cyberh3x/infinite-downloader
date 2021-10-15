@@ -21,7 +21,7 @@ class InstagramView:
                 "key": INSTAGRAM_PROFILE_PHOTO_KEY
             },
             {
-                "label": "Post image",
+                "label": "Post image(s) & Video(s)",
                 "key": INSTAGRAM_POST_PHOTO_KEY
             },
         ]
