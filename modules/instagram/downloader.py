@@ -69,7 +69,7 @@ class Downloader():
     def downloadPostPhoto(self):
         try:
             post = Post.from_shortcode(self.ig.context, self.target)
-            self.ig.download_post(post)
+            self.ig.download_post(post, target="")
             message = "Post photo(s) was successfully downloaded."
             return {
                 "title": "Success",
@@ -100,8 +100,9 @@ class Downloader():
                 "message": message,
                 "code": 500
             }
-        except:
-            message = "Unexpected error."
+        except Exception as e:
+            message = "Unexpected error. detail: {detail}"
+            message = message.format(detail=e)
             return {
                 "title": "error",
                 "message": message,
