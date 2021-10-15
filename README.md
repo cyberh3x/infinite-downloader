@@ -7,6 +7,7 @@
 ## Current features:
 
 * Download Instagram Profile Photo
+* Download Instagram Post Photo(s) & Vidoe(s)
 
 ## Download executable file
 
