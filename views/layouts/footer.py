@@ -13,10 +13,9 @@ class Footer():
                 "text": self.message,
             },
             "grid": {
-                "row": 3,
+                "row": 4,
                 "columnspan": 6,
-                "column": 0,
-                "pady": 20
+                "column": 0
             }
         }
         return LabelComponent(self.root, options).render()
@@ -27,7 +26,7 @@ class Footer():
                 "text": "Email: " + self.email,
             },
             "grid": {
-                "row": 4,
+                "row": 5,
                 "columnspan": 6,
                 "column": 0,
             }
