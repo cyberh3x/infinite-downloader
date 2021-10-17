@@ -2,7 +2,7 @@
 
 ## Application preview:
 
-![logo](https://s20.picofile.com/file/8442296450/downloader.PNG)
+![logo](https://s21.picofile.com/file/8442423850/downloader.PNG)
 
 ## Current features:
 
@@ -10,6 +10,9 @@
 * Download Instagram Post Image(s) & Vidoe(s)
 
 ## Download executable file
+
+### v0.3.0
+* [Windows](https://mega.nz/file/0VE1QKSI#li84xMfEVzOw1FdVkkTdheDQei6JKndVyN69QwrKIYc)
 
 ### v0.2.1
 * [Windows](https://mega.nz/file/lF0VxQ6A#Q5-xmyAmszH6HvckytrMxCwCpLlvfl5-5CllJD-sVjk)
