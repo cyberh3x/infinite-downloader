@@ -1,5 +1,5 @@
 import os
 
 
-def getUserProfilePath(suffix: str = "Pictures\\Instagram-Downloader"):
+def getUserProfilePath(suffix: str = "Infinite-Downloader"):
     return os.path.expanduser(os.sep.join(["~", suffix]))

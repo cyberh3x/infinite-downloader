@@ -3,6 +3,7 @@ from views.instagram.profile_photo import ProfilePhoto
 from views.instagram.post_photo import PostPhoto
 from config.constant import INSTAGRAM_POST_PHOTO_KEY, INSTAGRAM_PROFILE_PHOTO_KEY
 
+
 class InstagramView:
     def __init__(self, root):
         self.root = root
@@ -21,7 +22,7 @@ class InstagramView:
                 "key": INSTAGRAM_PROFILE_PHOTO_KEY
             },
             {
-                "label": "Post image(s) & Video(s)",
+                "label": "Post photo(s) & video(s)",
                 "key": INSTAGRAM_POST_PHOTO_KEY
             },
         ]

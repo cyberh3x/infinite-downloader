@@ -1,7 +1,7 @@
 from tkinter import Entry, StringVar
 
 
-class TextFieldComponent():
+class TextFieldComponent:
     def __init__(self, root, text_field_options: dict, on_change=lambda x, y, a, b: {}):
         self.root = root
         self.options = text_field_options

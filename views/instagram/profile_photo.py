@@ -3,7 +3,6 @@ from views.components.input.default import TextFieldComponent
 from views.components.label.default import LabelComponent
 from views.components.button.default import ButtonComponent
 from views.components.messageBox.default import PopupComponent
-from tkinter.filedialog import askdirectory
 
 
 class ProfilePhoto:
@@ -19,9 +18,9 @@ class ProfilePhoto:
             response = module.downloadProfile()
             title = response["title"]
             message = response["message"]
-            code = response["code"]
+            status = response["status"]
             options = {}
-            if code == 200:
+            if status == 200:
                 self.handleClearUsernameInput()
                 options["type"] = None
             else:
@@ -34,10 +33,6 @@ class ProfilePhoto:
                 "type": "error"
             }
             PopupComponent(title, message, options).render()
-
-    # def onBrowseClick(self):
-    #     self.handleClearSaveToInput()
-    #     self.save_to_input.insert(0, askdirectory())
 
     def handleClearSaveToInput(self):
         self.save_to_input.delete(0, 'end')
@@ -80,48 +75,6 @@ class ProfilePhoto:
         self.username_input = TextFieldComponent(self.root, options).render()
         return self.username_input
 
-    # def renderSaveToInputLabel(self):
-    #     options = {
-    #         "label": {
-    #             "text": "Save to",
-    #         },
-    #         "grid": {
-    #             "row": 2,
-    #             "column": 0
-    #         }
-    #     }
-    #     return LabelComponent(self.root, options).render()
-    #
-    # def renderSaveToInput(self):
-    #     options = {
-    #         "input": {
-    #             "width": 40,
-    #             "borderwidth": 5
-    #         },
-    #         "grid": {
-    #             "column": 1,
-    #             "row": 2,
-    #             "pady": 10
-    #         }
-    #     }
-    #     self.save_to_input = TextFieldComponent(self.root, options).render()
-    #     return self.save_to_input
-
-    # def renderBrowseAskDirectoryButton(self):
-    #     options = {
-    #         "button": {
-    #             "text": "Browse",
-    #             "command": self.onBrowseClick
-    #         },
-    #         "grid": {
-    #             "column": 2,
-    #             "row": 2,
-    #             "padx": 10,
-    #             "pady": 10
-    #         }
-    #     }
-    #     return ButtonComponent(self.root, options).render()
-
     def renderSubmitButton(self):
         options = {
             "button": {
@@ -141,7 +94,4 @@ class ProfilePhoto:
     def render(self):
         self.renderUsernameInput()
         self.renderLabel()
-        # self.renderSaveToInputLabel()
-        # self.renderSaveToInput()
-        # self.renderBrowseAskDirectoryButton()
         self.renderSubmitButton()

@@ -1,7 +1,7 @@
 from views.components.label.default import LabelComponent
 
 
-class Footer():
+class Footer:
     def __init__(self, root):
         self.root = root
         self.email = "sajjad.n18@outlook.com"

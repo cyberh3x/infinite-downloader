@@ -1,6 +1,4 @@
 from tkinter import ttk
-from tkinter import BOTH, TRUE
-
 
 class TabComponent:
     def __init__(self, root, tab_list: dict, options: dict):

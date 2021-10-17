@@ -1,8 +1,10 @@
 from tkinter import messagebox
 
 
-class PopupComponent():
-    def __init__(self, title, message, options: dict):
+class PopupComponent:
+    def __init__(self, title, message, options=None):
+        if options is None:
+            options = {}
         self.title = title
         self.message = message
         self.options = options
