@@ -1,6 +1,6 @@
 # Instagram Downloader
 
-## Application preview:
+## Preview:
 
 ![logo](https://s21.picofile.com/file/8442423850/downloader.PNG)
 
