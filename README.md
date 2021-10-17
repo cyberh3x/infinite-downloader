@@ -8,6 +8,7 @@
 
 * Download Instagram Profile Photo
 * Download Instagram Post Image(s) & Vidoe(s)
+* Download From Youtube
 
 ## Download executable file
 
