@@ -1,4 +1,4 @@
-from views.components.label.default import LabelComponent
+from views.youtube.video import Video
 
 
 class YoutubeView:
@@ -6,13 +6,4 @@ class YoutubeView:
         self.root = root
 
     def render(self):
-        options = {
-            "label": {
-                "text": "Coming soon...!",
-            },
-            "grid": {
-                "row": 0,
-                "column": 0
-            }
-        }
-        return LabelComponent(self.root, options).render()
+        Video(self.root).render()

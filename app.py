@@ -12,7 +12,7 @@ class App:
             root = Tk()
             root.title("Infinite Downloader")
             root.iconbitmap("assets/images/icons/app.ico")
-            root.geometry("500x215")
+            root.geometry("500x235")
             self.renderTabs(root)
             self.renderFooter(root)
             root.mainloop()

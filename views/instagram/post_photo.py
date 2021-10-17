@@ -17,9 +17,9 @@ class PostPhoto:
             response = module.downloadPostPhoto()
             title = response["title"]
             message = response["message"]
-            code = response["code"]
+            status = response["status"]
             options = {}
-            if code == 200:
+            if status == 200:
                 self.handleClearUsernameInput()
                 options["type"] = None
             else:

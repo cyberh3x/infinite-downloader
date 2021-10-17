@@ -1,7 +1,7 @@
 from tkinter import Button
 
 
-class ButtonComponent():
+class ButtonComponent:
     def __init__(self, root, options: dict):
         self.root = root
         self.options = options
