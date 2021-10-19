@@ -1,4 +1,4 @@
-# Instagram Downloader
+# Infinite Downloader!
 
 ## Application preview:
 
